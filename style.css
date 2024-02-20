@@ -1,0 +1,63 @@
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+/* Banner Section */
+
+.banner {
+  background-image: url("./images/banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Banner Section */
+
+/* Paribahan Section */
+
+.seat {
+  margin: 0 16px;
+  width: 104px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.seat:hover {
+  color: #fff;
+  background-color: #1dd100;
+}
+
+.selected {
+  color: #fff;
+  background-color: #1dd100 !important;
+}
+
+.enabled {
+  background-color: #1dd100;
+  color: white;
+}
+
+.disabled {
+  background-color: grey;
+  pointer-events: none;
+}
+
+.booked {
+  color: #fff;
+  background-color: #1dd100 !important;
+  pointer-events: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* Paribahan Section */

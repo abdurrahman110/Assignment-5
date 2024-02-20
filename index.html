@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- TailWind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Assignment - 05</title>
+</head>
+
+<body class="bg-white">
+
+    <!-- Header Section -->
+
+    <header class="py-8 max-w-7xl mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <a class="text-4xl font-extrabold font-raleway" href="/">TicketVista</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a
+                    class="px-8 py-4 bg-[#1DD100] bg-opacity-10 rounded-xl flex justify-center items-center gap-3  border border-[#1DD100] hover:bg-opacity-20 transition-all duration-300"><span
+                        class="text-xl font-bold font-raleway text-[#1DD100]">Bus</span> <img
+                        src="./images/bus-icon.png" alt=""></a>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Destination</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header Section -->
+
+
+    <main id="main" class="show">
+        <!-- Banner Section -->
+
+        <section class="banner rounded-[32px] pt-20 pb-32 max-w-7xl mx-auto">
+            <div class="max-w-3xl mx-auto text-center font-raleway">
+                <h1 class="text-white font-extrabold text-6xl mb-4 leading-normal">End-to-End Travel with <span
+                        class="text-[#1DD100]">Vista Paribahan</span></h1>
+                <p class="text-lg text-white mb-8">Yes, you can run unit tests and view the results directly within the
+                    app.
+                    The
+                    integrated
+                    testing features
+                    allow for a streamlined .</p>
+                <a class="bg-[#1DD100] inline-block rounded-xl text-black text-xl py-5 px-8 font-bold">Buy Tickets</a>
+            </div>
+        </section>
+
+        <!-- Banner Section -->
+
+        <!-- Coupon Section -->
+
+        <section class="py-32 max-w-7xl mx-auto">
+            <div class="mb-12">
+                <h2 class="font-raleway text-[40px] text-center font-bold">Best offers for you</h2>
+            </div>
+            <div class="flex items-center gap-6">
+                <div class="bg-[#FFBF0F] font-inter  text-[#030712] rounded-3xl flex justify-between items-center">
+                    <div class="p-12">
+                        <h3 class="text-[40px] opacity-80 font-bold">15% OFF</h3>
+                        <p class="text-xl font-semibold opacity-80">on your next purchase</p>
+                        <p class="text-lg opacity-50">use by January 2024</p>
+                    </div>
+                    <div>
+                        <img src="./images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="p-14">
+                        <h3 class="text-[40px] opacity-80 font-bold">NEW15</h3>
+                        <p class="text-lg opacity-50">Coupon Code</p>
+                    </div>
+                </div>
+                <div class="bg-[#F78C9C] font-inter  text-[#030712] rounded-3xl flex justify-between items-center">
+                    <div class="p-12">
+                        <h3 class="text-[40px] opacity-80 font-bold">15% OFF</h3>
+                        <p class="text-xl font-semibold opacity-80">on your next purchase</p>
+                        <p class="text-lg opacity-50">use by January 2024</p>
+                    </div>
+                    <div>
+                        <img src="./images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="p-14">
+                        <h3 class="text-3xl opacity-80 font-bold">Couple 20</h3>
+                        <p class="text-lg opacity-50">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-16">
+                <a href="#"
+                    class="bg-white inline-block rounded-xl text-[#1DD100] border border-[#1DD100] text-xl py-5 px-8 font-bold">See
+                    All
+                    Offers</a>
+            </div>
+        </section>
+
+        <!-- Coupon Section -->
+
+
+        <!-- Paribahan Section -->
+
+        <section class="bg-[#F7F8F8] rounded-t-[100px] py-32 border-t border-[#1DD100]">
+            <div class="mb-12 max-w-3xl mx-auto text-center">
+                <h2 class="font-raleway text-[40px] font-bold">Pikla Paribahan</h2>
+                <p class="text-xl text-[#030712] opacity-60">Yes, you can run unit tests and view the results directly
+                    within the app.
+                    The integrated
+                    testing features
+                    allow for a streamlined .</p>
+            </div>
+
+            <div class="max-w-7xl mx-auto space-y-6">
+                <div class="bg-white rounded-3xl flex">
+                    <div class="p-8 basis-full">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <img src="./images/bus-logo.png" alt="">
+                                <div class="text-[#030712]">
+                                    <h4 class="text-[32px] font-bold">Greenline Paribahan</h4>
+                                    <p class="opacity-60 text-xl">Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <button
+                                class="px-8 py-4 bg-[#1DD100] bg-opacity-10 rounded-xl flex justify-center items-center gap-3 hover:bg-opacity-20 transition-all duration-300">
+                                <img src="./images/seat-green.png" alt="">
+                                <span class="text-xl font-medium font-inter text-[#1DD100]"><span
+                                        id="seats_left">40</span>
+                                    Seets left</span>
+                            </button>
+                        </div>
+
+                        <div class="bg-[#F7F8F8] p-8 rounded-3xl text-[#030712] space-y-6 mt-6">
+                            <div
+                                class="flex justify-between items-center text-lg font-semibold pb-6 border-b-2 border-dashed border-[#0307121a]">
+                                <h3 class="opacity-60">Route</h3>
+                                <h3>Dhaka - Sylhet</h3>
+                            </div>
+                            <div
+                                class="flex justify-between items-center text-lg font-semibold pb-6 border-b-2 border-dashed border-[#0307121a]">
+                                <h3 class="opacity-60">Departure Time</h3>
+                                <h3>9:00 PM</h3>
+                            </div>
+
+                            <div class="text-[#030712] text-lg flex gap-6 items-center text-center">
+                                <div class="py-5 px-4 bg-[#030712] bg-opacity-5 rounded-xl basis-full">
+                                    <p class="opacity-80">Boarding Point - Laxmipur</p>
+                                </div>
+                                <div class="py-5 px-4 bg-[#030712] bg-opacity-5 rounded-xl basis-full">
+                                    <p class="opacity-80">Dropping Point - Bogura</p>
+                                </div>
+                                <div class="py-5 px-4 bg-[#030712] bg-opacity-5 rounded-xl basis-full">
+                                    <p class="opacity-80">Est. Time - 11 Hour</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/info-devider.png" class="h-full w-auto" alt="">
+                    </div>
+                    <div class="pl-5 pr-16 text-[#030712] font-raleway text-center self-center w-80">
+                        <img src="./images/fare.png" class="inline-block" alt="">
+                        <h3 class="text-[32px] font-bold">550 Taka</h3>
+                        <p class="opacity-60 text-2xl">Per Seat</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 flex h-auto">
+                    <div class="space-y-6 border-r-2 border-dashed border-[#0307121a] pr-6 mr-6">
+                        <h3 class="text-2xl font-semibold font-raleway text-[#030712]">Select Your Seat</h3>
+                        <div
+                            class="flex justify-between items-center text-lg font-semibold py-6 border-y-2 border-dashed border-[#0307121a] font-inter">
+                            <div class="flex items-center gap-2">
+                                <img src="./images/seat-gray.png" class="h-[28px] w-[28px]" alt="">
+                                <span class="text-[#030712] opacity-50">Available</span>
+                            </div>
+                            <div class="flex items-center gap-2 ">
+                                <img src="./images/seat-green-filled.png" class="h-[28px] w-[28px]" alt="">
+                                <span class="text-[#1DD100]">Selected</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="text-right">
+                                <div class="bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block mr-4">
+                                    <img src="./images/steering-wheel.png" class="w-8 h-8 inline-block" alt="">
+                                </div>
+                            </div>
+
+                            <div class="text-[#03071280] font-inter text-lg flex items-center gap-8">
+                                <!-- Left Row -->
+                                <div class="space-y-6">
+                                    <div class="flex items-center">
+                                        <h4 class="w-8">A</h4>
+                                        <div
+                                            class="seat a1 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            A1</div>
+                                        <div
+                                            class="seat a2 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            A2</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <h4 class="w-8">B</h4>
+                                        <div
+                                            class="seat b1 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            B1</div>
+                                        <div
+                                            class="seat b2 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            B2</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <h4 class="w-8">C</h4>
+                                        <div
+                                            class="seat c1 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            C1</div>
+                                        <div
+                                            class="seat c2 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            C2</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <h4 class="w-8">D</h4>
+                                        <div
+                                            class="seat d1 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            D1</div>
+                                        <div
+                                            class="seat d2 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            D2</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <h4 class="w-8">E</h4>
+                                        <div
+                                            class="seat e1 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            E1</div>
+                                        <div
+                                            class="seat e2 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            E2</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <h4 class="w-8">F</h4>
+                                        <div
+                                            class="seat f1 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            F1</div>
+                                        <div
+                                            class="seat f2 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            F2</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <h4 class="w-8">G</h4>
+                                        <div
+                                            class="seat g1 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            G1</div>
+                                        <div
+                                            class="seat g2 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            G2</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <h4 class="w-8">H</h4>
+                                        <div
+                                            class="seat h1 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            H1</div>
+                                        <div
+                                            class="seat h2 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            H2</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <h4 class="w-8">I</h4>
+                                        <div
+                                            class="seat i1 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            I1</div>
+                                        <div
+                                            class="seat i2 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            I2</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <h4 class="w-8">J</h4>
+                                        <div
+                                            class="seat j1 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            J1</div>
+                                        <div
+                                            class="seat j2 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            J2</div>
+                                    </div>
+                                </div>
+                                <!-- Right Row -->
+                                <div class="space-y-6">
+                                    <div class="flex items-center">
+                                        <div
+                                            class="seat a3 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            A3</div>
+                                        <div
+                                            class="seat a4 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            A4</div>
+                                    </div>
+                                    <div class="flex items-center">
+
+                                        <div
+                                            class="seat b3 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            B3</div>
+                                        <div
+                                            class="seat b4 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            B4</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="seat c3 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            C3</div>
+                                        <div
+                                            class="seat c4 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            C4</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="seat d3 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            D3</div>
+                                        <div
+                                            class="seat d4 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            D4</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="seat e3 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            E3</div>
+                                        <div
+                                            class="seat e4 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            E4</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="seat f3 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            F3</div>
+                                        <div
+                                            class="seat f4 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            F4</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="seat g3 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            G3</div>
+                                        <div
+                                            class="seat g4 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            G4</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="seat h3 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            H3</div>
+                                        <div
+                                            class="seat h4 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            H4</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="seat i3 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            I3</div>
+                                        <div
+                                            class="seat i4 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            I4</div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="seat j3 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            J3</div>
+                                        <div
+                                            class="seat j4 bg-[#030712] bg-opacity-10 rounded-xl py-3 px-10 inline-block">
+                                            J4</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="space-y-6 basis-full">
+                        <h3
+                            class="text-2xl font-semibold font-raleway text-[#030712] pb-6 border-b-2 border-dashed border-[#0307121a]">
+                            Select Your Seat</h3>
+
+                        <div class="bg-[#F7F8F8] p-8 rounded-3xl text-[#030712] space-y-6 mt-6">
+                            <div
+                                class="flex justify-between items-center text-base font-semibold pb-6 border-b-2 border-dashed border-[#0307121a]">
+                                <h3>Seat <span class="text-white bg-[#1DD100] px-2 py-px rounded-xl text-[12px]"
+                                        id="seat_count">0</span>
+                                </h3>
+                                <h3>Class</h3>
+                                <h3>Price</h3>
+                            </div>
+                            <div id="details_wrapper"
+                                class="text-base font-semibold pb-6 border-b-2 border-[#0307121a] space-y-4">
+
+                            </div>
+
+                            <div class="text-[#030712] text-base font-semibold font-inter space-y-6">
+                                <div class="flex justify-between items-center">
+                                    <h3>Total Price</h3>
+                                    <h3>BDT <span id="total_price">0</span></h3>
+                                </div>
+
+                                <div>
+                                    <div class="bg-white rounded-xl p-2 flex items-center">
+                                        <input type="text" name="" id="coupon_field"
+                                            class="block w-full h-full py-[14px] px-[22px] placeholder:text-base placeholder:opacity-40 placeholder:text-[#030712] outline-none"
+                                            id="" placeholder="Have any copupon?">
+                                        <button id="coupon_btn"
+                                            class="inline-block rounded-xl text-white text-xl py-5 px-8 font-bold disabled">Apply</button>
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-between items-center">
+                                    <h3>Grand Total</h3>
+                                    <h3>BDT <span id="grand_total">0</span></h3>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="space-y-6">
+                            <div class="space-y-4">
+                                <label class="text-[#030712] font-inter font-semibold" for="name">Passenger
+                                    Name*</label>
+                                <input required type="text" name="" id="name"
+                                    class="block w-full h-full p-6 placeholder:text-base placeholder:opacity-40 placeholder:text-[#030712] outline-none border-2 border-[#03071219] rounded-xl"
+                                    placeholder="Enter your name">
+                            </div>
+                            <div class="space-y-4">
+                                <label class="text-[#030712] font-inter font-semibold" for="phone">Phone Number*</label>
+                                <input required type="tel" name="" id="phone"
+                                    class="block w-full h-full p-6 placeholder:text-base placeholder:opacity-40 placeholder:text-[#030712] outline-none border-2 border-[#03071219] rounded-xl"
+                                    placeholder="Enter your phone number">
+                            </div>
+                            <div class="space-y-4">
+                                <label class="text-[#030712] font-inter font-semibold" for="email">Email ID</label>
+                                <input type="email" name="" id="email"
+                                    class="block w-full h-full p-6 placeholder:text-base placeholder:opacity-40 placeholder:text-[#030712] outline-none border-2 border-[#03071219] rounded-xl"
+                                    placeholder="Enter your email id">
+                            </div>
+
+                            <button class=" block w-full rounded-xl text-white text-xl py-5 px-8 font-bold disabled"
+                                id="submit_btn">Next</button>
+                        </div>
+
+                        <div
+                            class="flex items-center justify-center gap-10 text-[#03071299] underline text-base font-inter">
+                            <a href="#">Terms and Conditions</a>
+                            <a href="#">Cancellation Policy</a>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+        <!-- Paribahan Section -->
+
+        <!-- Modal -->
+    </main>
+
+    <section id="modal" class="h-screen justify-center items-center font-inter bg-[#F2F1F1] w-full hide">
+        <div class="max-w-3xl w-[768px] rounded-[50px] mx-auto bg-white py-14 px-20">
+            <div class="space-y-9 text-center">
+                <img src="./images/success.png" class="inline-block" alt="">
+                <h4 class="uppercase text-[#27AE60] font-bold text-2xl">Success</h4>
+                <p class="text-xl text-[#4A4A4A] text-center"><span class="font-bold">Thank you for Booking Our Bus
+                        Seats.
+                        We are working hard to find the best service and deals for you.</span><br>
+                    <span>Shortly you will find a confirmation in your email.</span>
+                </p>
+            </div>
+            <div class="mt-5 text-center">
+                <button id="modal_btn"
+                    class="text-xl font-semibold text-white py-4 px-32 bg-[#27AE60] rounded-full">Continue</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+
+    <!-- Scripts -->
+    <script src="./utilis.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
