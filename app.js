@@ -1,6 +1,7 @@
 const seats = document.querySelectorAll(".seat");
 let selectedSeats = [];
 let availableSeats = 40;
+let bookedSeats = [];
 const nameField = document.getElementById("name");
 const phoneField = document.getElementById("phone");
 const emailField = document.getElementById("email");
@@ -45,7 +46,10 @@ seats.forEach((seat) => {
         grandTotal.innerText = selectedSeats.length * 550;
         enableButton();
 
-        let seatsLeft = availableSeats - selectedSeats.length;
+        bookedSeats = document.querySelectorAll(".booked");
+
+        let seatsLeft =
+          availableSeats - selectedSeats.length - bookedSeats.length;
         seats_left.innerHTML = seatsLeft;
       } else {
         displaySelectedSeats();
